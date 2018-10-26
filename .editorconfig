@@ -1,0 +1,53 @@
+### Editor Config
+# Reference: http://editorconfig.org
+# Latest version: https://bitbucket.org/!api/2.0/snippets/stuntin/4eGAkz/c668d4fa4071a159ca485351225e9421b125b05c/files/.editorconfig
+
+root = true
+
+[*]
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+end_of_line = lf
+
+[*.{js,json,ts}]
+indent_style = space
+indent_size = 2
+
+[*.{md,markdown}]
+trim_trailing_whitespace = false
+
+[vcbuild.bat]
+end_of_line = crlf
+
+[{lib,src,test}/**.js]
+indent_style = space
+indent_size = 2
+
+[src/**.{h,cc}]
+indent_style = space
+indent_size = 2
+
+[test/*.py]
+indent_style = space
+indent_size = 2
+
+[configure]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+indent_size = 8
+
+[{deps,tools}/**]
+indent_style = ignore
+indent_size = ignore
+end_of_line = ignore
+trim_trailing_whitespace = ignore
+charset = ignore
+
+[{test/fixtures,deps,tools/node_modules,tools/gyp,tools/icu,tools/msvs}/**]
+insert_final_newline = false
+
+### Project Difined
